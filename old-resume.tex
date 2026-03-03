@@ -1,0 +1,154 @@
+\documentclass[9pt]{extletter}
+\usepackage[a4paper, top=1.0cm, bottom=1.0cm, left=1.5cm, right=1.5cm]{geometry}
+% \usepackage[a4paper, margin=1cm]{geometry}
+\usepackage{inputenc}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[T1]{fontenc}
+% \usepackage[sfdefault]{roboto}
+\usepackage[default]{raleway}
+% \usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{amssymb}
+
+% \setlength{\topsep}{0pt}
+% \setlength{\parskip}{0pt}
+\urlstyle{same}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\textbf{\Huge Hemant Kumar}
+
+\href{tel:+91-8547929682}{+91-8547929682} $|$ \href{mailto:mail.kumar.hemant@gmail.com}{mail.kumar.hemant@gmail.com} $|$ \href{https://www.linkedin.com/in/hem4nt-kum4r}{linkedin.com/in/hem4nt-kum4r} $|$ \href{https://github.com/hemantkumar31121993}{github.com/hemantkumar31121993}
+
+\vspace{9pt}
+\textbf{\Large Professional Summary} \hrulefill $\blacksquare$
+
+Software Engineer with 7+ years of experience building distributed systems in AdTech and cloud-native environments. Expertise in Scala, Golang, Apache Spark, Akka, AWS, and Databricks. Proven success in delivering scalable solutions, automating pipelines, and optimizing high-throughput services.
+
+\vspace{9pt}
+\textbf{\Large Experience} \hrulefill $\blacksquare$
+
+{\textbf{Senior Software Engineer II}}, \href{https://lgads.tv}{Alphonso Labs (LG Ad Solutions)}, Bangalore $|$ July 2019 -- Present
+\vspace{-5pt}
+\begin{itemize}
+    \item \textbf{Audience Builder} $|$ {\textsl{ReactJS, Apache Spark, Akka, REST, AWS, Data Pipelines}}
+    \begin{itemize}
+        \itemsep2pt
+        \item Designed and developed a scalable audience generation platform used for ad targeting
+        \item Implemented a DAG-based UI for defining targeting criteria using filter, aggregation, and join nodes
+        \item Built REST APIs with Akka-HTTP and developed a React-based self-serve UI
+        \item Utilized Akka-Actor for job lifecycle management and Spark for querying and generating audience data
+        \item Enabled multi-protocol data delivery to various DSPs and S3
+        \item Automated workflows to scale daily audience generation jobs from 30 to \textbf{400}, reducing human errors
+    \end{itemize}
+    
+    \item \textbf{DSP Data Augmenter Service} $|$ {\textsl{Golang, go-fiber, Redis, Spark, AWS EC2, ELB, Microservices, Kubernetes}}
+    \begin{itemize}
+        \itemsep2pt
+        \item Built a high-performance bid request augmenter service, replacing third-party solutions
+        \item Built Golang based API server using go-fiber with Redis as hot store for segments
+        \item Developed a Spark application to ingest/evict segments into/from Redis cluster
+        \item Achieved \textbf{45k QPS} with p99 latency of \textbf{10ms} on EC2 r5.2xlarge instances
+        \item Reduced segment activation turnaround time from nearly 2 days to \textbf{30 minutes}
+        \item Developed monitoring and alerting tools for Redis and database consistency
+    \end{itemize}
+    
+    \item \textbf{Databricks Migration Project} $|$ \textsl{Databricks, Spark, AWS, SBT}
+    \begin{itemize}
+        \itemsep2pt
+        \item Led migration of Audience Builder services from on-prem Spark and HDFS cluster to Databricks
+        \item Developed workflows to launch JARs on Databricks from executor workers
+        \item Built SBT plugin for automated JAR deployment to Databricks Volumes
+        \item Developed test harness to run integration tests on Databricks
+    \end{itemize}
+    
+    \item \textbf{Attribution Reporting Framework} $|$ \textsl{Spring Boot, Apache Camel, Kubernetes, Redis, Microservices, Event Driven}
+    \begin{itemize}
+        \itemsep2pt
+        \item Enabled advertisers to measure ad impact with reach, conversion, and lift metrics
+        \item Developed Spring Boot microservices and used Apache Camel for inter-service communication
+        \item Used Redis as the task queue for workers and persistent state layer
+        \item Reduced manual effort of monitoring external data for reporting by \textbf{100\%}
+    \end{itemize}
+\end{itemize}
+\vspace{-5pt}
+{\textbf{Software Engineer}}, \href{https://www.marvell.com/}{Cavium Networks (now Marvell)}, Hyderabad  $|$ July 2015 -- June 2016 
+\vspace{-5pt}
+\begin{itemize}
+    \item \textbf{ZIP Compression Accelerator} $|$ \textsl{Kernel Drivers, DLKM, ZLIB, LZ}
+    \begin{itemize}
+        \itemsep2pt
+        \item Developed Linux kernel drivers for ThunderX ZIP compression hardware
+        \item Created user-space libraries overriding libz.so to utilize hardware accelerators
+        \item Contributed code to the Linux kernel under \texttt{/drivers/crypto/cavium/zip}
+    \end{itemize}
+\end{itemize}
+\vspace{-\parskip}
+\vspace{9pt}
+\textbf{\Large Education} \hrulefill $\blacksquare$
+
+\textbf{Master of Technology, Computer Science and Engineering}, IIT Kanpur, India (2019), \textsl{CGPA: 8.67}
+
+\vspace{-5pt}
+\textbf{Bachelor of Technology, Computer Science and Engineering}, NIT Calicut, India (2015), \textsl{CGPA: 8.52}
+
+\vspace{9pt}
+\textbf{\Large Technical Skills} \hrulefill $\blacksquare$
+\vspace{-4pt}
+\begin{description}
+    \itemsep2pt
+    \item[Languages] Scala, Golang, JavaScript, C, C++, HTML, CSS, Python, Bash, \LaTeX
+    % \item[Scripting] Python, Bash
+    \item[Frameworks/Libraries] Spring Boot, Apache Camel, Akka, Spark, ReactJS, Redux
+    \item[Databases/Caches] Redis, MySQL, Hazelcast
+    \item[Cloud/Tools] AWS, Jenkins, Rundeck, Airflow, Docker, Kubernetes, Databricks, SBT
+\end{description}
+\vspace{-\parskip}
+% Languages -- Scala, Golang, JavaScript, C, C++, HTML, CSS, \LaTeX\\
+% Scripting -- Python, Bash\\
+% Frameworks/Libraries -- Spring Boot, Apache Camel, Akka, Spark, ReactJS, Redux\\
+% Databases/Caches -- Redis, MySQL, Hazelcast\\
+% Cloud/Tools -- AWS, Jenkins, Rundeck, Airflow, Docker, Kubernetes, Databricks
+% \clearpage
+\vspace{9pt}
+\textbf{\Large Academic Projects} \hrulefill $\blacksquare$
+\vspace{-5pt}
+\begin{itemize}
+    \item \textbf{Base-3 Normal Number Construction in AC0}, \textsl{under Dr. Satyadev Nandakumar, IIT Kanpur}
+    \begin{itemize}
+        \itemsep2pt
+        \item Explored the possibility of having non-uniform AC0 circuit for querying the approximate base-2 number
+    \end{itemize}
+    \item \textbf{Simple Integer Language Compiler SILC}, \textsl{under Prof. (Dr.) Vineeth Paleri, NIT Calicut}
+    \begin{itemize}
+        \itemsep2pt
+        \item Made a compiler for SIL and Generated assembly code targeting the Simple Integer Machine architecture
+        \item Designed and implemented Abstract Syntax Tree (AST) with static scope-based function calls
+        \item Utilized Lex for lexical analysis and Yacc for parser construction
+    \end{itemize}
+\end{itemize}
+\vspace{-\parskip}
+
+\vspace{9pt}
+\textbf{\Large Positions of Responsibility} \hrulefill $\blacksquare$
+\vspace{-5pt}
+\begin{itemize}
+    \item \textbf{Teaching Assistant}, CS350 Principles of Programming Languages, IIT Kanpur $|$ Aug 2018
+    \item \textbf{Student Lab Administrator}, Software Systems Lab, NIT Calicut $|$ July 2013 -- May 2015
+    \begin{itemize}
+        \item Managed authentication (LDAP), data backup (NFS), and automation scripts
+    \end{itemize}
+\end{itemize}
+\vspace{-\parskip}
+
+\vspace{9pt}
+\textbf{\Large Achievements and Interests} \hrulefill $\blacksquare$
+\vspace{-5pt}
+\begin{itemize}
+    \item 1st Dan Black Belt in Okinawan Shorin-ryu Karate and Kukkiwon Taekwondo
+    \item Interests: Computer Animation and Origami
+\end{itemize}
+\vspace{-\parskip}
+
+\end{document}
