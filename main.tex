@@ -1,0 +1,146 @@
+\documentclass[9pt]{extletter}
+\usepackage[a4paper, top=1.0cm, bottom=1.0cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[T1]{fontenc}
+% \usepackage[default]{raleway}
+% \usepackage[sfdefault,light]{roboto}
+\usepackage[sfdefault]{overlock}
+% \usepackage[defaultfam,light,tabular,lining]{montserrat}
+% \usepackage[default]{sourcesanspro}
+
+\usepackage{fara-resume}
+
+\name{Hemant Kumar}
+\tel{+91-8547929682}
+\email{mail.kumar.hemant@gmail.com}
+\linkedin{linkedin.com/in/hem4nt-kum4r}
+\github{github.com/hemantkumar31121993}
+
+\begin{document}
+
+\maketitle
+
+\resumesection{Professional Summary}
+
+Software Engineer with 7+ years of experience building distributed systems in AdTech and cloud-native environments.
+Expertise in Scala, Golang, Apache Spark, Akka, AWS, and Databricks.
+Proven success in delivering scalable solutions, automating pipelines, and optimizing high-throughput services.
+
+\resumesection{Experience}
+
+\companyposition{Senior Software Engineer II}{\href{https://lgads.tv}{Alphonso Labs (LG Ad Solutions)}}{Bangalore}{July 2019}{Present}
+
+\vspace{-5pt}
+\begin{itemize}
+    \item 
+    \begin{project}{Audience Builder}{ReactJS, Apache Spark, Akka, REST, AWS, Data Pipelines}
+        \item Designed and developed a scalable audience generation platform used for ad targeting
+        \item Implemented a DAG-based UI for defining targeting criteria using filter, aggregation, and join nodes
+        \item Built REST APIs with Akka-HTTP and developed a React-based self-serve UI
+        \item Utilized Akka-Actor for job lifecycle management and Spark for querying and generating audience data
+        \item Enabled multi-protocol data delivery to various DSPs and S3
+        \item Automated workflows to scale daily audience generation jobs from 30 to \textbf{400}, reducing human errors
+    \end{project}
+    
+    \item 
+    \begin{project}{DSP Data Augmenter}{Golang, go-fiber, Redis, Spark, AWS EC2, ELB, Microservices, Kubernetes}
+        \item Built a high-performance bid request augmenter service, replacing third-party solutions
+        \item Built Golang based API server using go-fiber with Redis as hot store for segments
+        \item Developed a Spark application to ingest/evict segments into/from Redis cluster
+        \item Achieved \textbf{45k QPS} with p99 latency of \textbf{10ms} on EC2 r5.2xlarge instances
+        \item Reduced segment activation turnaround time from nearly 2 days to \textbf{30 minutes}
+        \item Developed monitoring and alerting tools for Redis and database consistency
+    \end{project}
+    
+    \item 
+    \begin{project}{AWS \& Databricks Migration}{AWS, EKS, ElastiCache, RDS, Databricks}
+        \item Led migration of Audience Builder and DSP Data Augmenter from on-prem Spark to AWS and Databricks
+        \item Authored Helm charts for deploying services on Amazon EKS
+        \item Built an SBT plugin for automated JAR packaging and deployment to Databricks
+        \item Migrated persistence and caching layers to Amazon RDS and ElastiCache
+    \end{project}
+    
+    \item 
+    \begin{project}{Attribution Reporting Framework}{Spring Boot, Apache Camel, Kubernetes, Redis, Microservices, Event Driven}
+        \item Enabled advertisers to measure ad impact with reach, conversion, and lift metrics
+        \item Developed Spring Boot microservices and used Apache Camel for inter-service communication
+        \item Used Redis as the task queue for workers and persistent state layer
+        \item Reduced manual effort of monitoring external data for reporting by \textbf{100\%}
+    \end{project}
+\end{itemize}
+\vspace{-5pt}
+
+\companyposition{Software Engineer}{\href{https://www.marvell.com/}{Cavium Networks (now Marvell)}}{Hyderabad}{July 2015}{June 2016}
+
+\vspace{-5pt}
+\begin{itemize}
+    \item
+    \begin{project}{ZIP Compression Accelerator}{Kernel Drivers, DLKM, ZLIB, LZ}
+        \item Developed Linux kernel drivers for ThunderX ZIP compression hardware
+        \item Created user-space libraries overriding libz.so to utilize hardware accelerators
+        \item Contributed code to the Linux kernel under \texttt{/drivers/crypto/cavium/zip}
+    \end{project}
+\end{itemize}
+\vspace{-\parskip}
+
+\resumesection{Education}
+
+\education{Master of Technology}{Computer Science and Engineering}{IIT Kanpur, India}{2019}{8.67}
+
+\vspace{-5pt}
+\education{Bachelor of Technology}{Computer Science and Engineering}{NIT Calicut, India}{2015}{8.52}
+
+\resumesection{Technical Skills}
+
+\vspace{-5pt}
+\begin{description}
+    \itemsep2pt
+    \item[Languages] Scala, Golang, JavaScript, C, C++, HTML, CSS, Python, Bash, \LaTeX
+    % \item[Scripting] Python, Bash
+    \item[Frameworks/Libraries] Spring Boot, Apache Camel, Akka, Spark, ReactJS, Redux
+    \item[Databases/Caches] Redis, MySQL, Hazelcast
+    \item[Cloud/Tools] AWS, Jenkins, Rundeck, Airflow, Docker, Kubernetes, Databricks, SBT
+\end{description}
+\vspace{-\parskip}
+
+\resumesection{Academic Projects}
+
+\vspace{-5pt}
+\begin{itemize}
+    \item 
+    \begin{acadproject}{Base-3 Normal Number Construction in AC0}{under Dr. Satyadev Nandakumar}{IIT Kanpur}
+        \item Explored the possibility of having non-uniform AC0 circuit for querying the approximate base-2 number
+    \end{acadproject}
+    % \item 
+    % \begin{acadproject}{Simple Integer Language Compiler SILC}{under Prof. (Dr.) Vineeth Paleri}{NIT Calicut}
+    %     \item Made a compiler for SIL and Generated assembly code targeting the Simple Integer Machine architecture
+    %     \item Designed and implemented Abstract Syntax Tree (AST) with static scope-based function calls
+    %     \item Utilized Lex for lexical analysis and Yacc for parser construction
+    % \end{acadproject}
+\end{itemize}
+\vspace{-\parskip}
+
+% \resumesection{Positions of Responsibility}
+
+% \vspace{-5pt}
+% \begin{itemize}
+%     \item 
+%     \begin{acadprojectnoitem}
+%         {Teaching Assistant}{CS350 Principles of Programming Languages}{IIT Kanpur $|$ Aug 2018}
+%     \end{acadprojectnoitem}
+%     \item 
+%     \begin{acadproject}{Student Lab Administrator}{Software Systems Lab}{NIT Calicut $|$ July 2013 -- May 2015}
+%         \item Managed authentication (LDAP), data backup (NFS), and automation scripts
+%     \end{acadproject}
+% \end{itemize}
+% \vspace{-\parskip}
+
+\resumesection{Achievements}
+
+\vspace{-5pt}
+\begin{itemize}
+    \item 1st Dan Black Belt in Okinawan Shorin-ryu Karate and Kukkiwon Taekwondo
+    % \item Interests: Computer Animation and Origami
+\end{itemize}
+\vspace{-\parskip}
+
+\end{document}

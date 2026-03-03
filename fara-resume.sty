@@ -1,0 +1,84 @@
+\ProvidesPackage{fara-resume}[2026/02/07 Fara Resume ]
+\RequirePackage{hyperref}
+\RequirePackage{amssymb}
+\urlstyle{same}
+\pagenumbering{gobble}
+
+\def\@name{}
+\def\@tel{}
+\def\@email{}
+\def\@linkedin{}
+\def\@github{}
+
+\renewcommand{\name}[1]{\gdef\@name{#1}}
+\newcommand{\tel}[1]{\gdef\@tel{#1}}
+\newcommand{\email}[1]{\gdef\@email{#1}}
+\newcommand{\linkedin}[1]{\gdef\@linkedin{#1}}
+\newcommand{\github}[1]{\gdef\@github{#1}}
+
+\newcommand{\makecommunication}{\@tel{} $|$ \@email{} $|$ \href{https://\@linkedin}{\@linkedin{}} $|$ \href{https://\@github}{\@github{}}}
+
+\renewcommand{\maketitle}{
+\textbf{\Huge \@name{}}
+
+\makecommunication
+}
+
+\newcommand{\resumesection}[2]{
+\vspace{9pt}
+\textbf{\Large #1} \hrulefill $\blacksquare$
+
+}
+
+% \companyposition{<position>}{<company>}{<location>}{<start-date>}{<end-date>}
+% -----------------
+% Purpose:
+%   One-line generator for position and company details.
+%
+% Arguments:
+%   <position>  designation in the company
+%   <company>   company
+%   <location>  location of the company
+%   <start-date> start date
+%   <end-date> end date
+\newcommand{\companyposition}[5]{
+{\textbf{#1}}, #2, #3 $|$ #4 -- #5
+}
+
+% \project{<title>}{<tech stack>}
+\newcommand{\projecttitle}[2]{\textbf{#1} $|$ \textsl{#2}}
+
+%\begin{project}{<title>}{<tech stack>}
+% \item some information
+%\end{project}
+\newenvironment{project}[2]
+{
+    \projecttitle{#1}{#2}
+    \begin{itemize}
+    \itemsep2pt
+}
+{
+    \end{itemize}
+}
+
+%\begin{acadproject}{<title>}{<guide>}{<university>}
+% \item some information
+%\end{acadproject}
+\newenvironment{acadproject}[3]
+{
+    \textbf{#1}, {#2, #3}
+    \begin{itemize}
+    \itemsep2pt
+}
+{
+    \end{itemize}
+}
+\newenvironment{acadprojectnoitem}[3]
+{
+    \textbf{#1}, {#2, #3}
+}
+{
+}
+
+%\education{<degree>}{<major>}{<university>}{<graduated in>}{<cgpa>}
+\newcommand{\education}[5]{\textbf{#1}, \textbf{#2}, #3 (#4), \textsl{CGPA: #5}}
